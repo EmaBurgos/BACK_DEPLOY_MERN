@@ -34,13 +34,13 @@ const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
   console.log(
-    process.env.MONGO_URL,
+    process.env.MONGO_URI,
     process.env.JWT_SECRET,
     process.env.EMAIL_USER,
     process.env.EMAIL_HOST,
     process.env.EMAIL_PORT,
     process.env.EMAIL_PASS,
-    process.env.FRONT_URL
+    process.env.FRONTEND_URL
   );
   console.log(`Servidor funcionando en el puerto ${PORT}`);
 });
